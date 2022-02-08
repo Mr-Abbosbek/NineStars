@@ -1,0 +1,222 @@
+@media (max-width: 1399.9px) {
+  .services-blog {
+    width: 291px !important;
+    padding-top: 15px !important;
+  }
+  .services-blog:last-child {
+    margin-top: 50px !important;
+  }
+
+  /* ======================================= */
+
+  .portfolio-blog:hover .portfolio-icons {
+    transform: translateY(130px) !important;
+  }
+  .portfolio-blog:hover .portfolio-text {
+    transform: translateY(-80px) !important;
+  }
+}
+
+@media (max-width: 1340.9px) {
+  .row-all {
+    padding: 0px 70px !important;
+  }
+  .services-blog {
+    width: 281px !important;
+    padding-top: 0 !important;
+  }
+  .services-blog:last-child {
+    margin-top: 50px !important;
+  }
+}
+
+/* lg  */
+
+@media (max-width: 1199.9px) and (min-width: 992px) {
+  .row-all {
+    padding: 0px !important;
+  }
+}
+
+/* md  */
+
+@media (max-width: 991.9px) {
+  .homeList {
+    height: 100% !important;
+    padding: 100px 0px 50px 0px !important;
+  }
+  .row-all {
+    padding: 0px 40px !important;
+  }
+  .home-col {
+    padding-top: 50px !important;
+  }
+
+  /* ================================================ */
+
+  .aboutList {
+    padding: 30px 0px 0px 0px !important;
+  }
+  .about-col img {
+    width: 100% !important;
+  }
+
+  /* ================================================ */
+
+  .servicesList {
+    padding-top: 60px !important;
+  }
+  .services-blog {
+    margin-top: 50px !important;
+  }
+
+  /* =============================================== */
+  .portfolio-blog {
+    width: 46% !important;
+  }
+}
+
+/* sm */
+
+@media (max-width: 767.9px) {
+  .homeList {
+    padding: 100px 0px 50px 0px !important;
+  }
+  .row-all {
+    padding: 0px !important;
+  }
+  .home-col {
+    padding-top: 50px !important;
+  }
+  .home-col2 img {
+    animation: none !important;
+  }
+
+  /* ============================================= */
+
+  .aboutList {
+    padding: 30px 0px 0px 0px !important;
+  }
+
+  /* ============================================ */
+
+  .servicesList {
+    padding-top: 60px !important;
+  }
+  .services-blog {
+    width: 251px !important;
+    margin-top: 0 !important;
+    margin-bottom: 20px !important;
+  }
+  .services-blog:last-child {
+    margin-top: 0px !important;
+  }
+
+  /* =========================================== */
+
+  .portfolio-blog {
+    width: 48.5% !important;
+    margin-bottom: 20px !important;
+  }
+  .portfolio-blog:hover .portfolio-icons {
+    transform: translateY(120px) !important;
+  }
+  .portfolio-icons h6{
+    width: 45px !important;
+    height: 45px !important;
+    font-size: 30px;
+  }
+}
+
+/* xs */
+
+@media (max-width: 575.9px) {
+  .row-all {
+    padding: 0px !important;
+  }
+  .homeList {
+    padding: 100px 0px 30px 0px !important;
+  }
+
+  /* ================================================= */
+
+  .aboutList {
+    padding: 30px 0px 0px 0px !important;
+  }
+
+  /* ================================================= */
+
+  .servicesList {
+    padding-top: 50px !important;
+  }
+  .services-blogs {
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .services-blog {
+    width: 100% !important;
+    margin-bottom: 40px !important;
+    padding-top: 20px !important;
+  }
+  .services-blog:last-child {
+    margin-bottom: 0px !important;
+  }
+
+  /* ================================================== */
+
+  .portfolio-blog {
+    width: 100% !important;
+    margin-bottom: 40px !important;
+  }
+  .portfolio-blog:last-child {
+    margin-bottom: 0px !important;
+  }
+  .portfolio-icons h6{
+    width: 70px !important;
+    height: 70px !important;
+  }
+  .portfolio-icons h6 button{
+    border-radius: 35px !important;
+  }
+  .portfolio-blog:hover .portfolio-icons {
+    transform: translateY(170px) !important;
+  }
+  .portfolio-text h6 {
+    font-size: 22px !important;
+  }
+  .portfolio-blog:hover .portfolio-text {
+    transform: translateY(-150px) !important;
+  }
+}
+
+@media (max-width: 427.9px) {
+  .homeList {
+    padding-top: 60px !important;
+    padding-bottom: 0px !important;
+  }
+  .home-col {
+    padding-top: 30px !important;
+  }
+  .home-col h1 {
+    font-size: 42px !important;
+  }
+  .home-col p {
+    font-size: 23px !important;
+  }
+}
+
+@media (max-width: 360.9px) {
+  .homeList {
+    padding-top: 50px !important;
+    padding-bottom: 0px !important;
+  }
+  .home-col h1 {
+    font-size: 34px !important;
+  }
+  .home-col p {
+    font-size: 20px !important;
+  }
+  .services-blog {
+    padding-top: 10px !important;
+  }
+}

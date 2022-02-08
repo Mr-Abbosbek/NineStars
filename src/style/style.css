@@ -1,0 +1,352 @@
+*{
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+html{
+  box-sizing: border-box;
+}
+body{
+  font-family: "Nunito Sans", Arial, sans-serif !important;
+  background: #FEF8F5 !important;
+}
+ul{
+  list-style: none;
+}
+.additional{
+  width: 100% !important;
+  height: 72px !important;
+  border-bottom: 2px solid #FCEBE3;
+}
+#services, #contact{
+  background-color: white !important;
+  border: none !important;
+}
+.all-title{
+  font-weight: bold;
+  font-weight: 660;
+  font-size: 24px !important;
+  color: rgb(189, 188, 188);
+}
+.line-red{
+  color: #EB5D1E !important;
+  width: 65px;
+  height: 2.5px !important;
+  background: #EB5D1E !important;
+  opacity: 1;
+}
+.row-all{
+  width: 100%;
+  padding: 0 70px;
+  display: flex !important;
+  justify-content: center;
+}
+.all-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-all{
+  color: white;
+  background: #eb5d1e !important;
+  border: 1px solid #eb5d1e !important;
+  padding: 7px 25px !important;
+}
+
+.show2{
+  height: 200px;
+}
+
+
+
+
+/* =========== Navbar ======================================== Navbar ======================================= Navbar ========== */
+
+
+.navbar{
+  width: 100%;
+  position: fixed !important;
+  background-color: white;
+  z-index: 1111;
+}
+.navbar-brand{
+  font-size: 30px !important;
+}
+.navbar-toggler{
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
+  padding: 0px !important;
+  width: 35px !important;
+  height: 35px !important;
+  font-size: 15px !important;
+  box-shadow: none !important;
+}
+.hamburger-menu{
+  display: block;
+  font-size: 35px !important;
+}
+.hamburger{
+  display: none;
+}
+.hamburger-close{
+  display: none;
+}
+.close{
+  display: block;
+  font-size: 35px !important;
+}
+#basic-navbar-nav{
+  justify-content: end;
+  padding: 0 !important;
+}
+.nav-link{
+  font-size: 15px !important;
+  color: black !important;
+}
+.dropdown-child{
+  margin-bottom: 40px !important;
+}
+.nav-dropdown{
+  width: 100% !important;
+  position: absolute !important;
+}
+.nav-dropdown:hover, .nav-dropdown:focus{
+  background-color: #e9ecef !important;
+  color: #1e2125;
+}
+.dropdown-menu{
+  margin-top: 0px !important;
+  margin-left: 50px !important;
+}
+#btn-nav{
+  border-radius: 35px;
+}
+
+
+/* =========== HomeList ======================================= HomeList ====================================== HomeList ========== */
+
+
+.homeList{
+  padding: 110px 0px 50px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.home-col h1{
+  font-weight: 650;
+  font-size: 52px;
+}
+.home-col p{
+  font-size: 26px;
+  color: #A08F86;
+}
+#btn-home{
+  margin-top: 30px;
+  border-radius: 5px;
+}
+/* .home-col2{
+  border: 1px solid #000;
+} */
+.home-col{
+  /* border: 1px solid #000; */
+  display: flex !important;
+  align-items: center;
+}
+.home-col2 img{
+  animation: image infinite ease-in-out 2s alternate-reverse;
+}
+@keyframes image {
+  0%{
+    transform: translateY(10px);
+  } 100% {
+    transform: translateY(-10px);
+  }
+}
+
+
+
+/* ========== AboutList ============================== AboutList ============================== AboutList ======================== */
+
+
+
+.aboutList{
+  background: white;
+  padding-top: 72px;
+}
+.about-col img{
+  width: 80%;
+}
+.about-col2 h1{
+  font-size: 35px !important;
+}
+.about-col2 p{
+  font-size: 14.5px;
+  color: #5F6974;
+}
+.about-col2-col h5{
+  font-weight: 550;
+  color: #808991;
+}
+.about-icon{
+  color: #F39E7A;
+  font-size: 50px;
+}
+
+
+/* ========== ServicesList ============================ ServicesList ============================ ServicesList ====================== */
+
+
+.servicesList{
+  height: auto;
+  padding-top: 72px;
+}
+.services-blogs{
+  display: flex !important;
+  justify-content: space-between !important;
+  flex-wrap: wrap;
+  position: relative;
+}
+.services-blog{
+  width: 251px;
+  height: 288px;
+  background: white;
+  border-radius: 15px;
+  padding-top: 10px;
+  transition: .3s ease-in-out;
+  margin-bottom: 0px;
+}
+.services-blog:hover{
+  transform: translateY(-5px);
+  border-bottom: 3px solid #eb5d1e;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.blog-icon{
+  font-size: 48px;
+  color: #EF7F4D;
+}
+.blog-title{
+  font-weight: bold;
+  font-size: 18px;
+}
+.blog-text{
+  line-height: 28px !important;
+  font-size: 15px !important;
+}
+
+
+/* ========== PortfolioList ========================== PortfolioList ========================== PortfolioList ====================== */
+
+.portfolioList{
+  background: white;
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
+.portfolio-blogs{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.portfolio-blog{
+  position: relative;
+  overflow: hidden;
+  width: 31.5%;
+  margin-bottom: 30px;
+  border-radius: 15px !important;
+  border: none;
+}
+.portfolio-blog:hover img{
+  transform: scale(1.2) !important;
+  z-index: -1111;
+}
+.portfolio-blog:hover::before{
+  content: "";
+  position: absolute;
+  background: rgba(122, 105, 96, 0.6);
+  width: 100%;
+  height: 101%;
+  border-radius: 10px !important;
+  z-index: 1;
+}
+.portfolio-blog img{
+  width: 100%;
+  height: 100.1%;
+  border-radius: 10px !important;
+  transition: .9s all ease-in-out !important;
+}
+.portfolio-icons{
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  margin-top: -70px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  transition: 0.9s all ease-in-out;
+  z-index: 111;
+}
+.portfolio-icons h6{
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+}
+.portfolio-icons h6 button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  border: none;
+  background-color: white !important;
+  border-radius: 30px;
+  color: #eb5d1e;
+}
+
+.portfolio-blog:hover .portfolio-icons{
+  transform: translateY(150px);
+  z-index: 111;
+  color: white;
+}
+
+
+
+.portfolio-text{
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  transition: 0.9s ease-in-out;
+  color: white;
+}
+.portfolio-blog:hover .portfolio-text{
+  transform: translateY(-100px);
+  z-index: 111;
+  color: white;
+}
+
+#all,
+#app,
+#card,
+#web{
+  visibility: hidden;
+}
+.button-label label{
+  cursor: pointer;
+}
+
+#all1:checked + .button-label,
+#all2:checked + .button-label,
+#all:checked + .button-label,
+#app:checked + .button-label,
+#card:checked + .button-label,
+#web:checked + .button-label{
+  color: #eb5d1e !important;
+}
+
+
+/* ============ FAQList =============================== FAQList =============================== FAQList ============================ */
+
+.hide{
+  display: none;
+}

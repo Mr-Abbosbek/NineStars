@@ -1,4 +1,4 @@
-import { FaDribbble } from "react-icons/fa";
+import { FaDribbble, FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { BiFile, BiLink, BiPlusCircle, BiTachometer, BiWorld, BiChevronUp, BiChevronDown } from "react-icons/bi";
 
 const Date = {
@@ -152,7 +152,48 @@ const Date = {
       icon_1: <BiChevronUp />,
       icon_2: <BiChevronDown />
     }
+  ],
+  date4:[
+    {
+      id:1,
+      image: './images/team/team-1.jpg',
+      name: 'Walter White',
+      jobs: 'Chief Executive Officer',
+      icon_1: <FaTwitter />,
+      icon_2: <FaFacebookF />,
+      icon_3: <FaInstagram />,
+      icon_4: <FaLinkedinIn />
+    },
+    {
+      id:2,
+      image: './images/team/team-2.jpg',
+      name: 'Sarah Jonson',
+      jobs: 'Product Manager',
+      icon_1: <FaTwitter />,
+      icon_2: <FaFacebookF />,
+      icon_3: <FaInstagram />,
+      icon_4: <FaLinkedinIn />
+    },
+    {
+      id:3,
+      image: './images/team/team-3.jpg',
+      name: 'William Anderson',
+      jobs: 'CTO',
+      icon_1: <FaTwitter />,
+      icon_2: <FaFacebookF />,
+      icon_3: <FaInstagram />,
+      icon_4: <FaLinkedinIn />
+    },
+    {
+      id:4,
+      image: './images/team/team-4.jpg',
+      name: 'Amanda Json',
+      jobs: 'Accountant',
+      icon_1: <FaTwitter />,
+      icon_2: <FaFacebookF />,
+      icon_3: <FaInstagram />,
+      icon_4: <FaLinkedinIn />
+    },
   ]
-
 }
 export default Date;

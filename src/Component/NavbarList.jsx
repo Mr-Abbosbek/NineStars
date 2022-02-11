@@ -66,8 +66,8 @@ function NavbarList() {
             <NavDropdown.Item href="#action/3.5">Drop Down 5</NavDropdown.Item>
           </NavDropdown>
 
-          <Nav.Link href="#link">Contact Us</Nav.Link>
-          <MyButton id="btn-nav">Get Started</MyButton>
+          <Nav.Link href="#contact">Contact Us</Nav.Link>
+          <Nav.Link href="#about" className="p-0"><MyButton id="btn-nav" >Get Started</MyButton></Nav.Link>
         </Navbar.Collapse>
       </Container>
     </Navbar>

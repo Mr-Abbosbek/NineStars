@@ -18,7 +18,7 @@ ul{
   height: 72px !important;
   border-bottom: 2px solid #FCEBE3;
 }
-#services, #contact{
+#services{
   background-color: white !important;
   border: none !important;
 }
@@ -262,20 +262,47 @@ ul{
   transform: scale(1.2) !important;
   z-index: -1111;
 }
-.portfolio-blog:hover::before{
+.portfolio-blog::before{
   content: "";
   position: absolute;
   background: rgba(122, 105, 96, 0.6);
-  width: 100%;
-  height: 101%;
-  border-radius: 10px !important;
-  z-index: 1;
+  width: 0%;
+  /* transform: scale(1); */
+  left: 0;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  overflow: hidden;
+  z-index: 11;
+  transition: 1s ease-in-out;
 }
+.portfolio-blog:hover:before{
+  width: 100%;
+  /* transform: scale(0); */
+}
+/* .portfolio-blog::after{
+  content: "";
+  position: absolute;
+  background: rgba(122, 105, 96, 0.6);
+  transform: scale(0);
+  width: 100%;
+  right: 0;
+  height: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+  z-index: 11;
+  transition: 1s ease-in-out;
+}
+.portfolio-blog:hover::after{
+  transform: scale(1);
+} */
+
 .portfolio-blog img{
   width: 100%;
   height: 100.1%;
-  border-radius: 10px !important;
-  transition: .9s all ease-in-out !important;
+  border-radius: 10px;
+  transition: .9s all ease-in-out;
 }
 .portfolio-icons{
   width: 100%;
@@ -347,6 +374,165 @@ ul{
 
 /* ============ FAQList =============================== FAQList =============================== FAQList ============================ */
 
-.hide{
-  display: none;
+.faqList{
+  padding-top: 52px;
+}
+.faq-button{
+  cursor: pointer;
+}
+.faq-button p{
+  padding-left: 5px !important;
+}
+.faq-button span{
+  font-size: 25px;
+}
+.faq-text{
+  font-size: 15px;
+  padding-left: 30px !important;
+}
+
+/* ============ TeamList ============================== TeamList ============================== TeamList =========================== */
+
+.teamList{
+  background: white;
+  padding: 72px 0px;
+}
+.team-blogs{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+.team-blog{
+  width: 271px;
+  border-radius: 3px;
+  position: relative;
+}
+.team-blog::before{
+  content: "";
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  background: linear-gradient(rgba(255, 255, 255, 0.01) 0%,rgba(0, 0, 0, 0.01) 1%, rgba(0, 0, 0, 0.9) 100%);
+  border-radius: 3px;
+  z-index: 111;
+  transition: .5s ease-in-out !important;
+}
+.team-blog:hover::before{
+  height: 50%;
+}
+.team-blog img{
+  transition: 9s;
+  border-radius: 3px;
+}
+.team-icons p{
+  margin: 0 auto;
+  cursor: pointer;
+  width: 40%;
+  margin-bottom: 10px;
+  transition: 0.5s ease-in-out;
+}
+.team-icons p:hover{
+  color: #EB5D1E;
+}
+.team-icons{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  color: white;
+  overflow: hidden;
+  transition: .5s ease-in-out;
+  border-top-left-radius: 3px;
+  background: linear-gradient(0deg,rgba(0, 0, 0, 0.01) 1%,rgba(0, 0, 0, 0.1) 1%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.team-blog:hover .team-icons{
+  width: 20%;
+}
+.team-title{
+  position: absolute;
+  bottom: 0;
+  height: 0px;
+  width: 100%;
+  transition: .5s ease-in-out;
+  z-index: 1111;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.team-blog:hover .team-title{
+  height: 30%;
+}
+
+
+
+/* =========================================================================================== */
+
+.clientList{
+  padding-top: 72px;
+}
+.carousel{
+  display: flex !important;
+  justify-content: start !important;
+  flex-wrap: wrap !important;
+}
+
+/* ============================================================================================ */
+
+.contactList{
+  background: white;
+  padding: 72px 0px;
+}
+.contact-address, .contact-form{
+  border-radius: 4px;
+  border-top: 4px solid #EB5D1E;
+  border-bottom: 4px solid #EB5D1E;
+  background: #fff !important;
+  height: auto;
+}
+.contact-address .contact-icons{
+  width: 50px ;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 25px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #EB5D1E !important;
+  background: #eb5c1e1c;
+  transition: 0.5s ease-in-out;
+}
+.contact-address .contact-icons:hover{
+  background: #EB5D1E;
+  color: white !important;
+}
+
+.address-title{
+  padding-top: -60px !important;
+  padding-left: 20px !important;
+}
+.address-text{
+  padding-left: 70px !important;
+}
+.contact-textarea{
+  height: 100px;
+  transition: 0.2s ease-in-out !important;
+}
+#button-contact{
+  width: 100% !important;
+  border-radius: 0.25rem;
+  transition: 0.5s ease-in-out;
+}
+#button-contact:hover{
+  letter-spacing: 0.5px;
+  opacity: 0.8;
+}
+.form-control:focus{
+  box-shadow: 0px 0px 10px #EB5D1E !important;
 }

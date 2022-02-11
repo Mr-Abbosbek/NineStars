@@ -15,6 +15,16 @@
   .portfolio-blog:hover .portfolio-text {
     transform: translateY(-80px) !important;
   }
+
+  /* ======================================= */
+
+  .teamList{
+    padding: 72px 0px 22px 0px !important;
+  }
+  .team-blog{
+    width: 291px !important;
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: 1340.9px) {
@@ -28,6 +38,8 @@
   .services-blog:last-child {
     margin-top: 50px !important;
   }
+
+  /* ================================== */
 }
 
 /* lg  */
@@ -35,6 +47,16 @@
 @media (max-width: 1199.9px) and (min-width: 992px) {
   .row-all {
     padding: 0px !important;
+  }
+
+  /* =================================== */
+
+  .teamList{
+    padding: 72px 0px 42px 0px !important;
+  }
+  .team-blog{
+    width: 291px !important;
+    margin-bottom: 30px;
   }
 }
 
@@ -71,8 +93,24 @@
   }
 
   /* =============================================== */
+
   .portfolio-blog {
     width: 46% !important;
+  }
+
+  /* ================================================ */
+
+  .faq-button h5{
+    font-size: 15px !important;
+  }
+  .faq-text{
+    font-size: 14px !important;
+  }
+
+  /* =============================================== */
+
+  .team-blog{
+    width: 281px !important;
   }
 }
 
@@ -126,6 +164,16 @@
     height: 45px !important;
     font-size: 30px;
   }
+
+  /* ========================================== */
+
+  .teamList{
+    padding: 72px 0px 52px 0px !important;
+  }
+  .team-blog{
+    width: 251px !important;
+    margin-bottom: 20px !important;
+  }
 }
 
 /* xs */
@@ -172,20 +220,34 @@
     margin-bottom: 0px !important;
   }
   .portfolio-icons h6{
-    width: 70px !important;
-    height: 70px !important;
+    width: 65px !important;
+    height: 65px !important;
   }
   .portfolio-icons h6 button{
     border-radius: 35px !important;
   }
   .portfolio-blog:hover .portfolio-icons {
-    transform: translateY(170px) !important;
+    transform: translateY(160px) !important;
   }
   .portfolio-text h6 {
     font-size: 22px !important;
   }
   .portfolio-blog:hover .portfolio-text {
-    transform: translateY(-150px) !important;
+    transform: translateY(-130px) !important;
+  }
+
+  /* ========================================== */
+
+  .teamList{
+    padding: 72px 0px 22px 0px !important;
+  }
+  .team-blog{
+    width: 100% !important;
+    margin-bottom: 50px !important;
+  }
+  .team-icons p{
+    margin-top: 30px !important;
+    font-size: 20px !important;
   }
 }
 
@@ -203,6 +265,35 @@
   .home-col p {
     font-size: 23px !important;
   }
+
+  /* ================================ */
+
+  .portfolio-icons h6{
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .portfolio-blog:hover .portfolio-icons {
+    transform: translateY(140px) !important;
+  }
+  .portfolio-text h6 {
+    font-size: 22px !important;
+  }
+  .portfolio-blog:hover .portfolio-text {
+    transform: translateY(-120px) !important;
+  }
+  
+  /* =============================== */
+
+  .team-icons p{
+    margin-top: 20px !important;
+    font-size: 17px !important;
+  }
+
+  /* ============================== */
+
+  .address-text p{
+    font-size: 15px !important;
+  }
 }
 
 @media (max-width: 360.9px) {
@@ -218,5 +309,35 @@
   }
   .services-blog {
     padding-top: 10px !important;
+  }
+
+  /* ================================== */
+
+  .portfolio-icons h6{
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .portfolio-blog:hover .portfolio-icons {
+    transform: translateY(120px) !important;
+  }
+  .portfolio-text h6 {
+    font-size: 22px !important;
+  }
+  .portfolio-blog:hover .portfolio-text {
+    transform: translateY(-80px) !important;
+  }
+
+  /* ================================== */
+
+  .teamList{
+    padding: 72px 0px 32px 0px !important;
+  }
+  .team-blog{
+    width: 100% !important;
+    margin-bottom: 40px !important;
+  }
+  .team-icons p{
+    margin-top: 15px !important;
+    font-size: 17px !important;
   }
 }

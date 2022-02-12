@@ -8,7 +8,7 @@ function TeamList() {
       <section className="teamList">
         <Container>
           <Row>
-            <Col className="text-center m-0 ">
+            <Col className="text-center m-0 pb-3">
               <h3 className="all-title">Team</h3>
               <h2 className="fw-bold m-0">Our team is always here to help</h2>
               <div className="d-flex justify-content-center">
@@ -17,7 +17,7 @@ function TeamList() {
             </Col>
           </Row>
           <div className="row-all team-blogs m-0">
-            {DataBase.date4.map((post, id) => (
+            {DataBase.team.map((post, id) => (
               <div className="text-center p-0 team-blog shadow" key={id}>
                 <Image src={post.image} className="img-fluid" />
                 <div className="team-icons">

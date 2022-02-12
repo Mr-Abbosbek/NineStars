@@ -1,11 +1,10 @@
 import React from "react";
-
-import Router from "./Component/router";
+import RouterList from './Component/Router'; 
 
 function App() {
   return (
     <div>
-      <Router />
+      <RouterList />
     </div>
   );
 }

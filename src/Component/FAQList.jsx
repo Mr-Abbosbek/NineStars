@@ -21,7 +21,7 @@ function FAQList() {
           <Row className="row-all">
             <Col>
               {
-                DateBase.date3.map((post) => (
+                DateBase.faq.map((post) => (
                   <Faq key={post.id} {...post} />
                 ))
               }

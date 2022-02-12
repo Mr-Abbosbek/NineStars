@@ -4,15 +4,14 @@ import DataBase from "./database/base";
 import MyFilter from "./UI/Filter/MyFilter";
 
 function PortfolioList() {
-  const Date2 = [...DataBase.date2];
-  const [filter, setFilter] = useState(DataBase.date2);
+  const [filter, setFilter] = useState(DataBase.portfolio);
 
   const filterBlog = (filter) => {
     if (filter === "all") {
-      setFilter(Date2);
+      setFilter(DataBase.portfolio);
       return;
     }
-    const newBase = DataBase.date2.filter((item) => item.marka === filter);
+    const newBase = DataBase.portfolio.filter((item) => item.marka === filter);
     setFilter(newBase);
   };
 

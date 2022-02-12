@@ -1,8 +1,8 @@
-import { FaDribbble, FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
-import { BiFile, BiLink, BiPlusCircle, BiTachometer, BiWorld, BiChevronUp, BiChevronDown } from "react-icons/bi";
+import { FaDribbble, FaFacebookF, FaInstagram, FaLinkedinIn, FaSkype, FaTwitter } from "react-icons/fa";
+import { BiFile, BiLink, BiPlusCircle, BiTachometer, BiWorld, BiChevronUp, BiChevronDown, BiChevronRight } from "react-icons/bi";
 
 const Date = {
-  date1:[
+  services:[
     {
       id: 1,
       icon: <FaDribbble />,
@@ -28,8 +28,7 @@ const Date = {
       text: "At The href attribute requires a valid value to be accessible. Provide a valid, address as the href value."
     }
   ],
-
-  date2:[
+  portfolio:[
     {
       id: 1,
       icon_1: <BiPlusCircle />, 
@@ -103,7 +102,7 @@ const Date = {
       marka: "WEB"
     }
   ],
-  date3:[
+  faq:[
     {
       id: 1,
       number: "first",
@@ -153,7 +152,7 @@ const Date = {
       icon_2: <BiChevronDown />
     }
   ],
-  date4:[
+  team:[
     {
       id:1,
       image: './images/team/team-1.jpg',
@@ -194,6 +193,82 @@ const Date = {
       icon_3: <FaInstagram />,
       icon_4: <FaLinkedinIn />
     },
+  ],
+  useful_Links1: [
+    {
+      id: 1,
+      icon: <BiChevronRight />,
+      text: "Home",
+    },
+    {
+      id: 2,
+      icon: <BiChevronRight />,
+      text: "About us",
+    },
+    {
+      id: 3,
+      icon: <BiChevronRight />,
+      text: "Services",
+    },
+    {
+      id: 4,
+      icon: <BiChevronRight />,
+      text: "Team",
+    },
+    {
+      id: 5,
+      icon: <BiChevronRight />,
+      text: "Privacy policy",
+    },
+  ],
+  useful_Links2: [
+    {
+      id: 1,
+      icon: <BiChevronRight />,
+      text: "Web Design",
+    },
+    {
+      id: 2,
+      icon: <BiChevronRight />,
+      text: "Web Development",
+    },
+    {
+      id: 3,
+      icon: <BiChevronRight />,
+      text: "Product Management",
+    },
+    {
+      id: 4,
+      icon: <BiChevronRight />,
+      text: "Marketing",
+    },
+    {
+      id: 5,
+      icon: <BiChevronRight />,
+      text: "Graphic Design",
+    }
+  ],
+  footer_icons: [
+    {
+      id: 1,
+      icon: <FaTwitter />
+    },
+    {
+      id: 2,
+      icon: <FaFacebookF />
+    },
+    {
+      id: 3,
+      icon: <FaInstagram />
+    },
+    {
+      id: 4,
+      icon: <FaSkype />
+    },
+    {
+      id: 3,
+      icon: <FaLinkedinIn />
+    }
   ]
 }
 export default Date;

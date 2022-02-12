@@ -19,7 +19,7 @@ function ServicesList() {
             </Col>
           </Row>
           <div className="row-all services-blogs m-0">
-            {DataBase.date1.map((post, id) => (
+            {DataBase.services.map((post, id) => (
                 <div className="text-center px-4 services-blog shadow" key={id}>
                   <div className="blog-icon py-3">{post.icon}</div>
                   <h6 className="blog-title pb-1">{post.title}</h6>

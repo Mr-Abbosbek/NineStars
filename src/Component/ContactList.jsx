@@ -80,13 +80,13 @@ function ContactList() {
           <Col className="shadow col-lg-6 col-md-12 col-sm-12 col-12 px-4 px-sm-5 px-md-5 px-lg-5 contact-form py-5">
             <form>
               <Label>Your Name</Label>
-              <MyInput className="form-control" />
+              <MyInput className="form-control" placeholder="Name" />
               <Label className="pt-2">Your Email</Label>
-              <MyInput className="form-control" />
+              <MyInput className="form-control" placeholder="Email" />
               <Label className="pt-2">Subject</Label>
-              <MyInput className="form-control" />
+              <MyInput className="form-control" placeholder="Subject" />
               <Label className="pt-2">Message</Label>
-              <textarea className="form-control mb-4 contact-textarea"></textarea>
+              <textarea className="form-control mb-4 contact-textarea" placeholder="Message..."></textarea>
               <MyButton id="button-contact">Send Message</MyButton>
             </form>
           </Col>

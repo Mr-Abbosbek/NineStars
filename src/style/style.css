@@ -543,19 +543,25 @@ ul{
 /* ====================================================================================================== */
 
 #subscribe-button{
-  margin-left: 20px !important;
+  margin-left: 20px;
   border-radius: 0.25rem;
 }
 
 /* ======================================================================================================== */
 
-
+.footer{
+  background: white;
+}
+.footer-blog1{
+  padding-right: 30px !important;
+}
 .footer-icons-right{
   color:#EB5D1E;
   font-size: 17px !important;
 }
 .footer-link{
-  color: black !important;
+  color: gray !important;
+  font-size: 15px;
 }.footer-link:hover{
   color: #EB5D1E !important;
 }
@@ -575,4 +581,12 @@ ul{
 .footer-icon:hover{
   background: #EB5D1E;
   color: white !important;
+}
+.copyright h6{
+  margin: 0 !important;
+  font-size: 15px;
+  color: gray;
+}
+.copyright a{
+  color: gray;
 }

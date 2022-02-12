@@ -13,12 +13,14 @@ function newsLatterList() {
             <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
           </Col>
         </Row>
-        <Row className="row-all m-0">
-          <Col className="col-lg-7 col-md-9 col-sm-12 d-flex justify-content-between">
-            <MyInput className="form-control" />
-            <MyButton id="subscribe-button" >Subscribe</MyButton>
-          </Col>
-        </Row>
+        <form>
+          <Row className="row-all m-0">
+            <Col className="col-lg-7 col-md-9 col-sm-12 d-flex justify-content-between newsLatter-form">
+              <MyInput className="form-control" type="email" placeholder="Your Email" />
+              <MyButton id="subscribe-button" >Subscribe</MyButton>
+            </Col>
+          </Row>
+        </form>
       </Container>
     </section>
   );

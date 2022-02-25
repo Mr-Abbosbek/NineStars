@@ -38,15 +38,15 @@ function NavbarList() {
           <BiX className="hamburger-close" />
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav" className="p-0">
-          <Nav.Link className="menu-link" onClick={(e)=>{NavbarLinkClick(e)}}  href="#home" id="active" >Home</Nav.Link>
+          <Nav.Link className="menu-link" onClick={(e)=>NavbarLinkClick(e)}  href="#home" id="active" >Home</Nav.Link>
           <Nav.Link className="menu-link" onClick={(e)=>NavbarLinkClick(e)} href="#about" >About Us</Nav.Link>
           <Nav.Link className="menu-link" onClick={(e)=>NavbarLinkClick(e)} href="#services" >Services</Nav.Link>
           <Nav.Link className="menu-link" onClick={(e)=>NavbarLinkClick(e)} href="#portfolio">Portfolio</Nav.Link>
           <Nav.Link className="menu-link" onClick={(e)=>NavbarLinkClick(e)} href="#team">Team</Nav.Link>
 
           <NavDropdown className="menu-link" title="Dropdown" id="basic-nav-dropdown">
-            <NavDropdown.Item onClick={NavbarLinkClick} href="#action/3.1">Drop Down 1</NavDropdown.Item>
-            <NavDropdown.Item onClick={NavbarLinkClick} href="#action/3.2">Drop Down 2</NavDropdown.Item>
+            <NavDropdown.Item onClick={()=>document.querySelector(".navbar-toggler").click()} href="#action/3.1">Drop Down 1</NavDropdown.Item>
+            <NavDropdown.Item onClick={()=>document.querySelector(".navbar-toggler").click()} href="#action/3.2">Drop Down 2</NavDropdown.Item>
 
             <div className="dropdown-child">
               <NavDropdown
@@ -54,30 +54,30 @@ function NavbarList() {
                 id="basic-nav-dropdown"
                 className="nav-dropdown"
               >
-                <NavDropdown.Item onClick={NavbarLinkClick} href="#action/3.1">
+                <NavDropdown.Item onClick={(e)=>document.querySelector(".navbar-toggler").click()} href="#action/3.1">
                   Drop Down 1
                 </NavDropdown.Item>
-                <NavDropdown.Item onClick={NavbarLinkClick} href="#action/3.2">
+                <NavDropdown.Item onClick={(e)=>document.querySelector(".navbar-toggler").click()} href="#action/3.2">
                   Drop Down 2
                 </NavDropdown.Item>
-                <NavDropdown.Item onClick={NavbarLinkClick} href="#action/3.3">
+                <NavDropdown.Item onClick={(e)=>document.querySelector(".navbar-toggler").click()} href="#action/3.3">
                   Drop Down 3
                 </NavDropdown.Item>
-                <NavDropdown.Item onClick={NavbarLinkClick} href="#action/3.4">
+                <NavDropdown.Item onClick={(e)=>document.querySelector(".navbar-toggler").click()} href="#action/3.4">
                   Drop Down 4
                 </NavDropdown.Item>
-                <NavDropdown.Item onClick={NavbarLinkClick} href="#action/3.5">
+                <NavDropdown.Item onClick={(e)=>document.querySelector(".navbar-toggler").click()} href="#action/3.5">
                   Drop Down 5
                 </NavDropdown.Item>
               </NavDropdown>
             </div>
 
-            <NavDropdown.Item onClick={NavbarLinkClick} href="#action/3.4">Drop Down 4</NavDropdown.Item>
-            <NavDropdown.Item onClick={NavbarLinkClick} href="#action/3.5">Drop Down 5</NavDropdown.Item>
+            <NavDropdown.Item onClick={(e)=>document.querySelector(".navbar-toggler").click()} href="#action/3.4">Drop Down 4</NavDropdown.Item>
+            <NavDropdown.Item onClick={(e)=>document.querySelector(".navbar-toggler").click()} href="#action/3.5">Drop Down 5</NavDropdown.Item>
           </NavDropdown>
 
-          <Nav.Link className="menu-link" onClick={NavbarLinkClick} href="#contact">Contact Us</Nav.Link>
-          <Nav.Link className="menu-link nav-link-btn p-0" onClick={NavbarLinkClick} href="#about"><MyButton id="btn-nav" >Get Started</MyButton></Nav.Link>
+          <Nav.Link className="menu-link" onClick={(e)=>NavbarLinkClick(e)} href="#contact">Contact Us</Nav.Link>
+          <Nav.Link className="menu-link nav-link-btn p-0" onClick={(e)=>NavbarLinkClick(e)} href="#about"><MyButton id="btn-nav" >Get Started</MyButton></Nav.Link>
         </Navbar.Collapse>
       </Container>
     </Navbar>

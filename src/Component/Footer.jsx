@@ -25,7 +25,7 @@ function Footer() {
             <Col className="col-lg-3 col-md-3 col-sm-6 col-12 m-0 px-0 pt-1">
               <h6 className="fw-bold">Useful Links</h6>
               {DataBase.useful_Links1.map((post) => (
-                <div className="d-flex mb-3 footer-link" key={post.id}>
+                <div className="d-flex align-items-center mb-3" key={post.id}>
                   <p className="footer-icons-right m-0">{post.icon}</p>
                   <Link to="#" className="m-0 footer-link">
                     {post.text}

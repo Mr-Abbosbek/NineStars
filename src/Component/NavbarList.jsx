@@ -7,11 +7,16 @@ import { BiX, BiMenu } from "react-icons/bi";
 
 function NavbarList() {
   let k = 0;
-
-  const NavbarLinkClick = () => {
-    return document.querySelector(".navbar-toggler").click();
+  
+  const NavbarLinkClick = (evt) => {
+    document.querySelector(".navbar-toggler").click();
+    let menuLink = document.querySelectorAll(".menu-link");
+    for (let i = 0; i < menuLink.length; i++) {
+      menuLink[i].className = menuLink[i].className.replace(" active", "");
+    }
+    evt.currentTarget.className += " active";
   }
-
+  
   return (
     <Navbar bg="light" expand="lg" className="shadow navbar">
       <Container>
@@ -33,13 +38,13 @@ function NavbarList() {
           <BiX className="hamburger-close" />
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav" className="p-0">
-          <Nav.Link onClick={NavbarLinkClick} href="#home" data-toggle="collapse" >Home</Nav.Link>
-          <Nav.Link onClick={NavbarLinkClick} href="#about" >About Us</Nav.Link>
-          <Nav.Link onClick={NavbarLinkClick} href="#services" >Services</Nav.Link>
-          <Nav.Link onClick={NavbarLinkClick} href="#portfolio">Portfolio</Nav.Link>
-          <Nav.Link onClick={NavbarLinkClick} href="#team">Team</Nav.Link>
+          <Nav.Link className="menu-link" onClick={(e)=>{NavbarLinkClick(e)}}  href="#home" id="active" >Home</Nav.Link>
+          <Nav.Link className="menu-link" onClick={(e)=>NavbarLinkClick(e)} href="#about" >About Us</Nav.Link>
+          <Nav.Link className="menu-link" onClick={(e)=>NavbarLinkClick(e)} href="#services" >Services</Nav.Link>
+          <Nav.Link className="menu-link" onClick={(e)=>NavbarLinkClick(e)} href="#portfolio">Portfolio</Nav.Link>
+          <Nav.Link className="menu-link" onClick={(e)=>NavbarLinkClick(e)} href="#team">Team</Nav.Link>
 
-          <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+          <NavDropdown className="menu-link" title="Dropdown" id="basic-nav-dropdown">
             <NavDropdown.Item onClick={NavbarLinkClick} href="#action/3.1">Drop Down 1</NavDropdown.Item>
             <NavDropdown.Item onClick={NavbarLinkClick} href="#action/3.2">Drop Down 2</NavDropdown.Item>
 
@@ -71,8 +76,8 @@ function NavbarList() {
             <NavDropdown.Item onClick={NavbarLinkClick} href="#action/3.5">Drop Down 5</NavDropdown.Item>
           </NavDropdown>
 
-          <Nav.Link onClick={NavbarLinkClick} href="#contact">Contact Us</Nav.Link>
-          <Nav.Link onClick={NavbarLinkClick} href="#about" className="p-0"><MyButton id="btn-nav" >Get Started</MyButton></Nav.Link>
+          <Nav.Link className="menu-link" onClick={NavbarLinkClick} href="#contact">Contact Us</Nav.Link>
+          <Nav.Link className="menu-link nav-link-btn p-0" onClick={NavbarLinkClick} href="#about"><MyButton id="btn-nav" >Get Started</MyButton></Nav.Link>
         </Navbar.Collapse>
       </Container>
     </Navbar>

@@ -58,10 +58,6 @@ ul{
   padding: 7px 25px !important;
 }
 
-.show2{
-  height: 200px;
-}
-
 .hide{
   top: 0 !important;
 }
@@ -110,6 +106,10 @@ ul{
 .nav-link{
   font-size: 15px !important;
   color: black !important;
+}
+.nav-link:hover,
+.nav-link.active{
+  color: red !important;
 }
 .dropdown-child{
   margin-bottom: 40px !important;

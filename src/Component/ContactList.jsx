@@ -65,13 +65,16 @@ function ContactList() {
                   <p className="opacity-50">+998777777777</p>
                 </div>
                 <div>
-                  <Iframe
-                    className="w-100 h-auto border"
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d367.2906391644586!2d71.19794172221805!3d40.44088050138671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1suz!2s!4v1644569595568!5m2!1suz!2s"
-                    allowfullscreen=""
-                    loading="lazy"
-                    placeholder="Map"
-                  ></Iframe>
+                     <Iframe
+                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d367.2906391644586!2d71.19794172221805!3d40.44088050138671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1suz!2s!4v1644569595568!5m2!1suz!2s"
+              width="100%"
+              height="200"
+              frameBorder="0"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              aria-hidden="false"
+              tabIndex="0"
+            />
                 </div>
               </Col>
             </Row>

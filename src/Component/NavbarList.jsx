@@ -38,7 +38,7 @@ function NavbarList() {
           <BiX className="hamburger-close" />
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav" className="p-0">
-          <Nav.Link className="menu-link" onClick={(e)=>NavbarLinkClick(e)}  href="#home" id="active" >Home</Nav.Link>
+          <Nav.Link className="menu-link active" onClick={(e)=>NavbarLinkClick(e)}  href="#home"  >Home</Nav.Link>
           <Nav.Link className="menu-link" onClick={(e)=>NavbarLinkClick(e)} href="#about" >About Us</Nav.Link>
           <Nav.Link className="menu-link" onClick={(e)=>NavbarLinkClick(e)} href="#services" >Services</Nav.Link>
           <Nav.Link className="menu-link" onClick={(e)=>NavbarLinkClick(e)} href="#portfolio">Portfolio</Nav.Link>
